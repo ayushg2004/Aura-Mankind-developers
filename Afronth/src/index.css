@@ -1,0 +1,750 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* .outerdiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.logo{
+  text-align: left;
+  height: 4rem;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+
+
+
+.innerdiv {
+  width: 100%;
+  height: 100%;
+}
+
+::placeholder {
+  text-align: right;
+  color: black;
+  font-size: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.searchimg {
+  width: 40px;
+  margin-left: -2px;
+}
+
+input {
+  width: 160px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+}
+
+.loginimg {
+  
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+
+.cartbag {
+  margin: 2px;
+  width: 35px;
+  height: 34px;
+}
+
+.cartbag:hover {
+  cursor: pointer;
+}
+
+.cartbagp {
+  position: relative;
+  top: 16px;
+  right: 22px;
+  color: white;
+  font-size: 13px;
+}
+
+.flex1 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.flex2 {
+  display: flex;
+}
+
+.login {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  margin-left: -1px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+
+.afterlogin {
+  margin-left: 0px;
+  margin-top: 12px;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
+
+/* Default navbar styles */
+.navbar , nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  background-color: transparent; /* Default background color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 100;
+}
+
+.navbar li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.navbar li a, .navbar li button {
+  text-decoration: none;
+  color: white; /* Default text color */
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 50px;
+  font-family: "Mallanna", sans-serif;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar li button:hover, .navbar li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Navbar style when scrolled */
+.navbar-white {
+  background-color: white;
+  box-shadow: 0 4px 2px -2px gray;
+
+}
+
+.navbar-white li a, .navbar-white li button {
+  color: black;
+}
+
+/* Change hover color for scrolled navbar */
+.navbar-white li a:hover, .navbar-white li button:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+
+
+.slides {
+  width: 100%;
+  height: 654px;
+  background-image: url(images/bg1.jpeg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  
+  animation-name: slider;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(images/bg1.jpeg);
+  }
+
+  25% {
+    background-image: url(images/bg1.jpg);
+  }
+
+  50% {
+    background-image: url(images/bg5.jpg);
+  }
+
+  75% {
+    background-image: url(images/bg4.jpg);
+  }
+
+  100% {
+    background-image: url(images/bg3.jpg);
+  }
+}
+
+.loginouterdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.logindiv {
+  display: flex;
+  width: 60%;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px gray, -1px -1px 6px gray;
+  background-color: whitesmoke;
+}
+
+.logindivsignup {
+  display: flex;
+  width: 60%;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px gray, -1px -1px 6px gray;
+  background-color: whitesmoke;
+  margin-top: 63px;
+  margin-left: 250px;
+}
+
+.divgreensignup {
+  width: 500px;
+  height: 100vh;
+  background-image: url(./images/bg1.jpg);
+  background-size: 500px 50vh;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  margin-left: 30px;
+}
+
+.divgreen {
+  width: 500px;
+  height: 100vh;
+  background-image: url(./images/bg1.jpeg);
+  background-size: 500px 50vh;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  margin-left: 30px;
+}
+
+.logininfo {
+  height: 60%;
+  width: 260px;
+  margin: 20px 0px 0px 100px;
+}
+
+.logininfo input {
+  outline: none;
+  border: 0.5px solid black;
+  width: 270px;
+  height: 30px;
+  font-size: 20px;
+  margin: 15px 0px 12px 0px;
+  padding: 5px;
+}
+
+.logininfosignup {
+  /* height: 60%; */
+  width: 260px;
+  margin: -75px 0px 0px 100px;
+}
+
+.logininfosignup input {
+  outline: none;
+  border: 0.5px solid black;
+  width: 270px;
+  height: 30px;
+  font-size: 20px;
+  margin: 15px 0px 12px 0px;
+  padding: 5px;
+}
+
+.formdiv {
+  margin-left: -60px;
+}
+
+.submit {
+  height: 30px;
+  font-size: 15px;
+}
+
+.submit:hover {
+  background-color: rgb(177, 182, 186);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.loginzara {
+  text-align: center;
+  margin: 50px 0px 120px -300px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.Addiv {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 30%;
+  left: 100px;
+}
+
+.Adimg {
+  width: 18px;
+  margin: 6px;
+}
+
+.Adimg:hover {
+  cursor: pointer;
+}
+
+.category {
+  margin-left: 80px;
+}
+
+.categorynav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+  z-index: 2;
+}
+
+.firstdiv {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(226, 202, 206);
+}
+
+.categoryflex {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.firstimg {
+  width: 400px;
+  opacity: .8;
+}
+
+/* Category STyle */
+.container {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryimg {
+  width: 350px;
+  height: 420px;
+  margin: 16px;
+  border-radius: 5px;
+}
+
+.categoryh4 {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.price {
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+.prevprice {
+  text-decoration: line-through;
+  opacity: .6;
+}
+
+.discount {
+  border: 1px solid black;
+  margin-left: 10px;
+  background-color: rgb(231, 247, 247);
+}
+
+.cartadd {
+  height: 21px;
+  background-color: rgb(231, 247, 247);
+  border: 1px solid black;
+  margin-left: 13px;
+}
+
+.cartadd:hover {
+  cursor: pointer;
+}
+
+.categoryimg:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 5px 8px #555;
+}
+
+/* FOOTER */
+/* footer {
+  width: 100%;
+  height: 200px;
+  border: 0.5px solid black;
+  
+  background-color: rgb(232, 242, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+} */
+
+/* footer input {
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+footer input::placeholder {
+  text-align: left;
+}
+
+footer button {
+  border-radius: 10px;
+  background-color: blue;
+  margin-left: 5px;
+  width: 60px;
+  height: 20px;
+  color: white;
+  border: none;
+} */
+
+/* footer button:hover {
+  background-color: rgb(72, 72, 238);
+  cursor: pointer;
+}
+
+.lastdivfooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 50px;
+} */
+
+/* main-container */
+.main-header {
+  position: absolute; /* Make it fixed on the slide */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10; /* Ensure it stays on top */
+}
+
+.main-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.main-header p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Selection Form */
+.selection-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.selection-form select, .selection-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.selection-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selection-form button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  border: 0.5px solid black;
+  margin-bottom: 3rem;
+  background-color: rgb(247, 251, 247);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer input {
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.footer input::placeholder {
+  text-align: left;
+}
+
+.footer button {
+  border-radius: 10px;
+  background-color: blue;
+  margin-left: 5px;
+  width: 60px;
+  height: 20px;
+  color: white;
+  border: none;
+}
+
+.footer button:hover {
+  background-color: rgb(72, 72, 238);
+  cursor: pointer;
+}
+
+.lastdivfooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.fixed-div {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(35, 34, 34);
+  color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fixed-div button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.fixed-div p {
+  margin: 0;
+  padding-right: 15px; /* Spacing between text and button */
+}
+
+
+.email {
+  border: 1px solid black;
+  background-color: rgb(184, 181, 181);
+}
+
+
+
+
+.welcome {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 30px;
+}
+
+.pitchflex {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* width: 50%; */
+  margin: auto;
+}
+
+.mydivflex{
+  display: flex;
+}
+
+.outsidepitchdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pitchless {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  border: 0.5px solid black;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.card-img-top {
+  width: inherit;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100px;
+  height: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(46, 46, 249);
+}
+
+.card-title {
+  margin-bottom: 5px;
+}
+
+.card-body {
+  margin-left: 10px;
+}
+
+.card-text {
+  margin-bottom: 6px;
+}
+
+.askpitchorinvest {
+  width: 50%;
+  height: 80vh;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.5px solid black;
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.ask {
+  display: block;
+  border: 1px solid black;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+  font-weight: bolder;
+  background-color: blue;
+  border-radius: 15px;
+}
+
+.knowledge {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.knowimg {
+  width: 45%;
+  border-radius: 20px;
+  box-shadow: -2px -2px 5px gray;
+  opacity: .8;
+}
+
+.knowdiv {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.logoutbtn {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  width: 60px;
+  margin-left: -1px;
+  margin-top: 13px;
+}
+.logoutbtn:hover{
+  cursor: pointer;
+}
+.pitchidea{
+  float: right;
+  margin-right: 40px;
+  text-decoration: none;
+  margin-top: -65px;
+  font-size: 28px;
+  color: black;
+  font-family: "Dancing Script", cursive;;
+  font-weight: bold;
+}
+.pitchidea:hover{
+  text-decoration: underline;
+}
